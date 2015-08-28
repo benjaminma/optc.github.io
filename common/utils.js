@@ -20,6 +20,7 @@ var parseUnit = function(element,n) {
             atk : element[15] ? element[15][1] : 0,
             rcv : element[15] ? element[15][2] : 0
         },
+        good    : element[16] , perfect  : element[17] ,
         number: n
     };
     if (element.indexOf(null) != -1) result.incomplete = true;

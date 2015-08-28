@@ -347,7 +347,7 @@ h3 > span > input {
 }
 
 #mainTable td + td ~ td {
-    min-width: 75px;
+    min-width: 50px;
 }
 
 .dataTables_filter {

@@ -174,7 +174,9 @@ var tableData = window.units.filter(function(x) { return x.name; }).map(function
         x.cost,
         x.slots,
         x.stars,
-        x.number
+        x.number,
+        x.good,
+        x.perfect
     ];
 });
 
@@ -366,7 +368,10 @@ app.directive('characterTable',function($rootScope, $compile) {
                     { title: 'CMB' },
                     { title: 'Cost' },
                     { title: 'Slots' },
-                    { title: 'Stars' }
+                    { title: 'Stars' },
+                    { visible: false },
+                    { title: 'Good' },
+                    { title: 'Perfect' }
                 ],
                 rowCallback: function(row, data, index) {
                     if (row.hasAttribute('loaded')) return;
